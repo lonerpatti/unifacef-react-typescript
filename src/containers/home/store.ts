@@ -1,5 +1,5 @@
 import { action, observable } from 'mobx';
-import { getPrice } from '../../api/economy.api';
+import { getPrice } from '../../apis/economy.api';
 
 export default class HomeStore {
   @observable records: any[] = [];
