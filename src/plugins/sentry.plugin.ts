@@ -7,10 +7,13 @@ import { configureScope, init } from '@sentry/browser'
     return;
   }
 
-  const { REACT_APP_SENTRY_DSN } = process.env;
+  const { REACT_APP_SENTRY_DSN, REACT_APP_VERSION, REACT_APP_NODE_ENV } = process.env;
+  if (!REACT_APP_SENTRY_DSN) {
+    return;
+  }
 
-  init({ dsn: REACT_APP_SENTRY_DSN });
-
+  init({ dsn: REACT_APP_SENTRY_DSN, release: REACT_APP_VERSION, environment: REACT_APP_NODE_ENV });
   configureScope(scope => {
-  })
+  });
+
 })();
