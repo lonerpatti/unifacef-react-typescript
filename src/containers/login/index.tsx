@@ -64,9 +64,9 @@ export default class Login extends React.Component<Props> {
                   <Input
                     name='email'
                     minLength={3}
-                    maxLength={20}
+                    maxLength={25}
                     className={'uppercase'}
-                    placeholder='ex: jr_acn@yahoo.com.br'
+                    placeholder='ex: lonerpatti@yahoo.com.br'
                     value={email}
                     type='email'
                     icon='user'
