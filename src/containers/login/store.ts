@@ -16,7 +16,7 @@ export default class LoginStore {
 
     const credentials = {
       email: 'lonerpatti@yahoo.com.br',
-      password: 'batata'
+      password: 'couvecomlaranja'
     };
 
     if (this.email !== credentials.email || this.password !== credentials.password) {
